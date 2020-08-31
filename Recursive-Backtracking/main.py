@@ -1,3 +1,5 @@
+"""Backtracking Recursive Maze Generation"""
+
 import pygame, sys, random
 
 pygame.init()
@@ -31,13 +33,13 @@ class Cell:
         if self.visited:
             pygame.draw.rect(win, (190, 90, 90), (self.i*w, self.j*w, w, w))
         if self.walls[0]:
-            pygame.draw.line(win, (90, 90, 90), (x,y), (x+w,y))
+            pygame.draw.line(win, (0, 0, 0), (x,y), (x+w,y))
         if self.walls[1]:    
-            pygame.draw.line(win, (90, 90, 90), (x+w,y), (x+w,y+w))
+            pygame.draw.line(win, (0, 0, 0), (x+w,y), (x+w,y+w))
         if self.walls[2]:    
-            pygame.draw.line(win, (90, 90, 90), (x+w,y+w), (x,y+w))
+            pygame.draw.line(win, (0, 0, 0), (x+w,y+w), (x,y+w))
         if self.walls[3]:
-            pygame.draw.line(win, (90, 90, 90), (x,y+w), (x,y))
+            pygame.draw.line(win, (0, 0, 0), (x,y+w), (x,y))
         
     def highlight(self, win):
         x = self.i * w
@@ -94,7 +96,10 @@ for j in range(rows):
         cell = Cell(i, j)
         grid.append(cell)
 
-current = grid[0]
+n = 0
+#n = (cols*rows)//2 + (cols+rows)*2
+
+current = grid[n]
 
 while True:
     for event in pygame.event.get():
@@ -102,13 +107,14 @@ while True:
             pygame.quit()
             sys.exit()
         
-    win.fill((0, 30, 30))
+    win.fill((0, 0, 0))
     
     
     for cell in grid:
         cell.show(win)
     
-    current.visited = True 
+    current.visited = True
+    current.highlight(win) 
     #Step1
     nextcell = current.checkNeighbors()   
     if isinstance(nextcell, Cell):
@@ -121,9 +127,6 @@ while True:
         current = nextcell
     elif len(stack) > 0:
         current = stack.pop()
- 
-    
-    clock.tick(60)
+
     pygame.display.flip()
-    
     
