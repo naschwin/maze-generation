@@ -8,10 +8,10 @@
 
 ### Recursive Bactracking Algorithm
 Using Stack data structure to store each passage.<br>
-![Recursive-Bactracking](https://github.com/naschwin/maze-generation/tree/master/Images/recursion.mp4)
+![Recursive-Bactracking](https://github.com/naschwin/maze-generation/tree/master/Images/recursion.gif)
 
 ### Aldous-Broder Algorithm
-![Aldous-Broder](https://github.com/naschwin/maze-generation/tree/master/Images/aldous.mp4)
+![Aldous-Broder](https://github.com/naschwin/maze-generation/tree/master/Images/aldous.gif)
 
 ### Procedural Generation Algorithm
-![Procedural-Generation](https://github.com/naschwin/maze-generation/tree/master/Images/procedural.mp4)
+![Procedural-Generation](https://github.com/naschwin/maze-generation/tree/master/Images/procedural.gif)
