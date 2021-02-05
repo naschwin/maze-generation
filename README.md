@@ -9,28 +9,16 @@
 ### Recursive Bactracking Algorithm
 Recursive Bactracking Maze Generation Visualization using Pygame.<br>
 Press enter to start.<br>
-![Recursive-Bactracking](https://github.com/naschwin/path-finding-visualization/blob/master/Images/Astar.gif)
+![Recursive-Bactracking](https://github.com/naschwin/maze-generation/blob/master/Images/recursion.gif)
 <br>
 
 ### Aldous-Broder Algorithm
 Aldous-Broder Maze Generation Visualization using Pygame.<br>
 Press enter to start.<br>
-![Aldous-Broder](https://github.com/naschwin/path-finding-visualization/blob/master/Images/BFS.gif)
+![Aldous-Broder](https://github.com/naschwin/maze-generation/blob/master/Images/aldous.gif)
 <br>
 
 ### Procedural Generation Algorithm
 Procedural Maze Generation Visualization using Pygame.<br>
 Press enter to start.<br>
-![Procedural-Generation](https://github.com/naschwin/path-finding-visualization/blob/master/Images/Djikstra.gif)
-
-
-
-
-Using Stack data structure to store each passage.<br>
-![Recursive-Bactracking*](https://github.com/naschwin/maze-generation/tree/master/Images/recursion.gif)
-
-
-![Aldous-Broder*](https://github.com/naschwin/maze-generation/tree/master/Images/aldous.gif)
-
-
-![Procedural-Generation*](https://github.com/naschwin/maze-generation/tree/master/Images/procedural.gif)
+![Procedural-Generation](https://github.com/naschwin/maze-generation/blob/master/Images/procedural.gif)
